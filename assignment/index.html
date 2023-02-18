@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>G For Genius</title>
+</head>
+
+<body>
+    <header class="m-4 ">
+        <div class="bg-base-100 p-4 bg-cyan-100 flex justify-between shadow-lg">
+            <div class="grid-cols-1">
+                <h1 class="inline-block text-4xl">Interactive</h1><br>
+                <h2>Geometry Genius</h1>
+            </div>
+            <div class=>
+                <a class="btn">Get started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="flex">
+            <div class="mt-4 px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-4 w-[70%]">
+                <div class="card card-compact w-full bg-base-100 shadow-xl ">
+                    <figure><img src="./geometry-genius-resources-main/images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 id="name-1" class="text-3xl font-semibold text-center">Triangle</h2>
+                        <p class="text-center text-lg">Area (A) = 0.5 x b x h</p>
+                        <div class="flex gap-2 items-center">
+                            <input placeholder="b" type="number" name="" id="triangle-base" class="shadow-lg h-7 w-[30%]">
+                            <p>cm</p>
+                            <input placeholder="h" type="number" name="" id="triangle-height" class="shadow-lg h-7 w-[30%]">
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions justify-center">
+                            <button id="triangle" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl ">
+                    <figure><img src="./geometry-genius-resources-main/images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 id="name-2" class="text-3xl font-semibold text-center">Rectangle</h2>
+                        <p class="text-center text-lg">Area (A) = W x I</p>
+                        <div class="flex gap-2 items-center">
+                            <input placeholder="b" type="text" name="" id="rectangle-width" class="shadow-lg h-7 w-[30%]">
+                            <p>cm</p>
+                            <input placeholder="h" type="text" name="" id="rectangle-i" class="shadow-lg h-7 w-[30%]">
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions justify-center">
+                            <button id="rectangle" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl ">
+                    <figure><img src="./geometry-genius-resources-main/images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 id="name-3" class="text-3xl font-semibold text-center">Parallelogram</h2>
+                        <p class="text-center text-lg">Area (A) = b x h</p>
+                        <div class="flex gap-2 items-center">
+                            <input placeholder="b" type="text" name="" id="parallelogram-base" class="shadow-lg h-7 w-[30%]">
+                            <p>cm</p>
+                            <input placeholder="h" type="text" name="" id="parallelogram-height" class="shadow-lg h-7 w-[30%]">
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions justify-center">
+                            <button id="parallelogram" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl ">
+                    <figure><img src="./geometry-genius-resources-main/images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 id="name-4" class="text-3xl font-semibold text-center">Rhombus</h2>
+                        <p class="text-center text-lg">Area (A) = 0.5 x d1 x d2</p>
+                        <div class="flex gap-2 items-center">
+                            <input placeholder="b" type="text" name="" id="rhombus-d1" class="shadow-lg h-7 w-[30%]">
+                            <p>cm</p>
+                            <input placeholder="h" type="text" name="" id="rhombus-d2" class="shadow-lg h-7 w-[30%]">
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions justify-center">
+                            <button id="rhombus" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl ">
+                    <figure><img src="./geometry-genius-resources-main/images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 id="name-5" class="text-3xl font-semibold text-center">Pentagon</h2>
+                        <p class="text-center text-lg">Area (A) = 0.5 x p x b</p>
+                        <div class="flex gap-2 items-center">
+                            <input placeholder="b" type="text" name="" id="pentagon-p" class="shadow-lg h-7 w-[30%]">
+                            <p>cm</p>
+                            <input placeholder="h" type="text" name="" id="pentagon-b" class="shadow-lg h-7 w-[30%]">
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions justify-center">
+                            <button id="pentagon" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl ">
+                    <figure><img src="./geometry-genius-resources-main/images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 id="name-6" class="text-3xl font-semibold text-center">Ellipse</h2>
+                        <p class="text-center text-lg">Area (A) = RAb</p>
+                        <div class="flex gap-2 items-center">
+                            <input placeholder="b" type="text" name="" id="ellipse-a" class="shadow-lg h-7 w-[30%]">
+                            <p>cm</p>
+                            <input placeholder="h" type="text" name="" id="ellipse-b" class="shadow-lg h-7 w-[30%]">
+                            <p>cm</p>
+                        </div>
+                        <div class="card-actions justify-center">
+                            <button id="ellipse" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 px-2 w-[30%]">
+                <h1 class="text-3xl font-bold underline text-center">Area Of Calculation</h1>
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th>Sl</th>
+                                <th>Name</th>
+                                <th>Value</th>
+                                <th>Convert</th>
+                            </tr>
+                        </thead>
+                        <tbody id = "table-container">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
