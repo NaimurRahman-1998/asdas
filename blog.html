@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog</title>
+</head>
+
+<body>
+    <header class="m-4 ">
+        <div class="bg-base-100 p-4 px-12 bg-sky-100 flex justify-between shadow-lg items-center">
+            <div class="grid-cols-1">
+                <h1 class="inline-block font-bold text-4xl">Interactive</h1><br>
+                <h2 class="text-xl text-zinc-600 ">Geometry Genius</h1>
+            </div>
+            <div class="mr-6">
+                <a id="back" class="btn bg-sky-500 border-none hover:bg-sky-600 text-white rounded-lg px-8 py-2">Go
+                    Back</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="text-4xl text-center underline font-bold">Questions</h1>
+            <div class="mx-96 mt-12">
+                <div class="mb-4">
+                    <h1 class="text-2xl font-semibold mb-1">1.Whats is DOM and what is the purpose of DOM</h1>
+                    <p>Answer: The full form of DOM is Document Object Model. It uses JavaScript to Change and Create
+                        the elements, attributes of html & CSS. It can be used to create a Dynamic website and adds
+                        functionality to interact with the website </p>
+                </div>
+                <div class="mb-4">
+                    <h1 class="text-2xl font-semibold mb-1">2.How to get elements By DOM</h1>
+                    <p>
+                        Answer:<br>
+                        1.using "getElementById"<br>
+                        2.using "getElementByClassName" <br>
+                        3.using "getElementByTagName"
+                    </p>
+                </div>
+                <div class="mb-4">
+                    <h1 class="text-2xl font-semibold mb-1">3.What is Event Bubble</h1>
+                    <p>Answer: Event Bubbling is a concept in DOM. It happens when an element receives an event, and
+                        that event bubbles up or in other words it is transmitted to its parent and previous elements in
+                        DOM tree and it happens until it reaches to the root element.</p>
+                </div>
+                <div class="mb-4">
+                    <h1 class="text-2xl font-semibold mb-1">4.Whats CallBack Function</h1>
+                    <p>Answer: CallBack function is a function where another function is called as a parameter. Or a
+                        function can be called inside another function.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        document.getElementById('back').addEventListener('click', function () {
+            window.location.href = "./index.html"
+        })
+    </script>
+</body>
+
+</html>
